@@ -57,6 +57,7 @@ namespace ns3 {
       bool  IsBeacon()                   { return m_isBeacon;}
 
       void  PrintDistances(Ptr<OutputStreamWrapper> stream, Ptr<Node> node) const;
+      void  PrintCoordinates(Ptr<OutputStreamWrapper> stream, Ptr<Node> node) const;
 
     private:
       //Start protocol operation
