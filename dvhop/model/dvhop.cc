@@ -255,6 +255,11 @@ namespace ns3 {
 
             }
 
+        void
+            RoutingProtocol::DeleteSomeNodes(Time time, uint32_t interface, uint32_t totalNodes)
+            {   
+                    Simulator::Schedule(time, &RoutingProtocol::NotifyInterfaceDown, this, interface);
+            }  
 
         void
             RoutingProtocol::NotifyInterfaceDown (uint32_t interface)
@@ -364,7 +369,7 @@ namespace ns3 {
         void
             RoutingProtocol::PrintCoordinates (Ptr<OutputStreamWrapper> stream, Ptr<Node> node) const
             {
-                if(node->GetId() != 0 && node->GetId() != 4 && node->GetId() != 9)
+                if(node->GetId() != 1 && node->GetId() != 7 && node->GetId() != 14)
                 {
                     //*stream->GetStream() << "Node " << node->GetId()<<"\n";
                     std::cout << "Node " << node->GetId()<<"\n";
@@ -377,14 +382,6 @@ namespace ns3 {
 
                 }
             }
-
-
-
-
-
-
-
-
 
         int64_t
             RoutingProtocol::AssignStreams (int64_t stream)

@@ -40,6 +40,7 @@ namespace ns3 {
                                   ErrorCallback            errcb);
       virtual void SetIpv4(Ptr<Ipv4> ipv4);
       virtual void NotifyInterfaceUp (uint32_t interface);
+      virtual void DeleteSomeNodes(Time time, uint32_t interface, uint32_t totalNodes);
       virtual void NotifyInterfaceDown (uint32_t interface);
       virtual void NotifyAddAddress (uint32_t interface, Ipv4InterfaceAddress address);
       virtual void NotifyRemoveAddress (uint32_t interface, Ipv4InterfaceAddress address);

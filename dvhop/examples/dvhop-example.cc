@@ -10,6 +10,22 @@
 #include "ns3/netanim-module.h"
 #include <iostream>
 #include <cmath>
+#include "ns3/udp-socket-factory.h"
+#include "ns3/wifi-net-device.h"
+#include "ns3/adhoc-wifi-mac.h"
+#include "ns3/string.h"
+#include "ns3/pointer.h"
+#include "ns3/dvhop.h"
+#include "ns3/node-list.h"
+#include "ns3/names.h"
+#include "ns3/ptr.h"
+#include "ns3/ipv4-list-routing.h"
+#include "ns3/node.h"
+#include "stdlib.h"
+
+#include "ns3/simulator.h"
+
+#include "ns3/dvhop.h"
 
 using namespace ns3;
 
@@ -48,6 +64,10 @@ private:
   bool printRoutes;
 
   uint32_t numNodes; //Number of nodes
+  
+
+  uint32_t numNodesToKill = 0;
+  uint32_t beacons[3] = {1,7,14};
   //\}
 
   ///\name network
@@ -63,6 +83,7 @@ private:
   void InstallInternetStack ();
   void InstallApplications ();
   void CreateBeacons();
+  void DeleteSomeNodes(int, uint32_t, uint32_t);
 };
 
 int main (int argc, char **argv)
@@ -78,7 +99,7 @@ int main (int argc, char **argv)
 
 //-----------------------------------------------------------------------------
 DVHopExample::DVHopExample () :
-  size (4),
+  size (5),
   step (30),
   totalTime (10),
   //numNodes (20),
@@ -122,7 +143,11 @@ DVHopExample::Run ()
   Simulator::Stop (Seconds (totalTime));
 
   AnimationInterface anim("animation.xml");
-
+  //for(int i = 1; i <= 9; i+=2)
+  //{
+    srand(100);
+    DVHopExample::DeleteSomeNodes(1, interfaces.Get((int)(rand() % (int)(numNodes))).second, numNodes);
+  //}
   Simulator::Run ();
   Simulator::Destroy ();
 }
@@ -130,12 +155,37 @@ DVHopExample::Run ()
 void
 DVHopExample::Report (std::ostream &)
 {
+
 }
 
-void
+    void
 DVHopExample::CreateNodes ()
 {
-  std::cout << "Creating " << (unsigned)numNodes << " nodes " << step << " m apart.\n";
+    srand(260);
+    uint32_t nodesToKill[numNodesToKill];
+    for(uint32_t i = 0; i < numNodesToKill; i++)
+    {
+        nodesToKill[i] = rand() % (int)(numNodes);
+        for(int j = 0; j < 3; j++)
+        {
+            if(nodesToKill[i] == beacons[j] || nodesToKill[i] == 15)
+            {
+                if(i!=0)
+                {
+                    i--;//try this iteration of the for loop again
+                }
+                else
+                {
+                    nodesToKill[i] = 3;
+                }
+            }
+        }
+    }
+
+
+
+
+  std::cout << "Creating " << (unsigned)numNodes<< " nodes " << step << " m apart.\n";
   nodes.Create (numNodes);
   // Name nodes
   for (uint32_t i = 0; i < numNodes; ++i)
@@ -154,31 +204,46 @@ DVHopExample::CreateNodes ()
                                  "DeltaY", DoubleValue (step),
                                  "GridWidth", UintegerValue (size),
                                  "LayoutType", StringValue ("RowFirst"));
+  
   mobility.SetMobilityModel ("ns3::ConstantPositionMobilityModel");
   mobility.Install (nodes);
+
+  for(uint32_t i = 0; i < numNodes; i++)
+  {
+        for(uint32_t j = 0; j < numNodesToKill; j++)
+        {
+            if(i == nodesToKill[j])
+            {
+                Ptr<MobilityModel> nodeToYeet = nodes.Get(i)->GetObject<MobilityModel>();
+                Vector crazyPosition = Vector(200, 0, 0);
+                nodeToYeet->SetPosition(crazyPosition);
+            }
+        }
+  }
+
+
 }
 
 void
 DVHopExample::CreateBeacons ()
 {
-  Ptr<Ipv4RoutingProtocol> proto = nodes.Get (0)->GetObject<Ipv4>()->GetRoutingProtocol ();
+  Ptr<Ipv4RoutingProtocol> proto = nodes.Get (1)->GetObject<Ipv4>()->GetRoutingProtocol ();
   Ptr<dvhop::RoutingProtocol> dvhop = DynamicCast<dvhop::RoutingProtocol> (proto);
   dvhop->SetIsBeacon (true);
   //dvhop->SetPosition (123.42, 4534.452);
-  dvhop->SetPosition(0,0);
+  dvhop->SetPosition(1 * step,0 * step);
 
-  proto = nodes.Get (4)->GetObject<Ipv4>()->GetRoutingProtocol ();
+  proto = nodes.Get (7)->GetObject<Ipv4>()->GetRoutingProtocol ();
   dvhop = DynamicCast<dvhop::RoutingProtocol> (proto);
   dvhop->SetIsBeacon (true);
   //dvhop->SetPosition (6663.42, 566.646);
-  dvhop->SetPosition(0,-1 * step);
+  dvhop->SetPosition(2 * step,-1 * step);
 
-
-  proto = nodes.Get (9)->GetObject<Ipv4>()->GetRoutingProtocol ();
+  proto = nodes.Get (14)->GetObject<Ipv4>()->GetRoutingProtocol ();
   dvhop = DynamicCast<dvhop::RoutingProtocol> (proto);
   dvhop->SetIsBeacon (true);
   //dvhop->SetPosition (123.42, 9873.45);
-  dvhop->SetPosition(step,-2 * step);
+  dvhop->SetPosition(4 * step,-2 * step);
 
 }
 
@@ -201,6 +266,20 @@ DVHopExample::CreateDevices ()
       wifiPhy.EnablePcapAll (std::string ("aodv"));
     }
 }
+
+void
+DVHopExample::DeleteSomeNodes(int time, uint32_t interface, uint32_t totalNodes) 
+{
+    Ptr<Ipv4RoutingProtocol> proto = nodes.Get (0)->GetObject<Ipv4>()->GetRoutingProtocol ();
+    Ptr<dvhop::RoutingProtocol> dvhop = DynamicCast<dvhop::RoutingProtocol> (proto);
+    dvhop->DeleteSomeNodes(Seconds(time), interface, totalNodes);
+    //Simulator::Schedule(Seconds(time), &DVHopExample::InstallInternetStack, this);
+    //Simulator::Schedule(Seconds(time), 
+
+    //InstallInternetStack();
+    //CreateBeacons();
+}
+
 
 void
 DVHopExample::InstallInternetStack ()
