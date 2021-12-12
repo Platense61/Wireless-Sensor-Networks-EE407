@@ -1,13 +1,13 @@
-# project ns (3.30.1) configured on Sun Nov  7 16:41:14 2021 by
+# project ns (3.30.1) configured on Sun Nov 21 16:52:27 2021 by
 # waf 2.0.18 (abi 20, python 3080af0 on linux)
 # using ./waf configure --enable-examples
 #
 ----------------------------------------
 Setting top to
-/home/lucas/ns-allinone-3.30.1/ns-3.30.1
+/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1
 ----------------------------------------
 Setting out to
-/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build
+/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build
 ----------------------------------------
 Checking for 'gcc' (C compiler)
 find program=['gcc', 'cc'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='CC' -> ['/usr/bin/gcc']
@@ -728,7 +728,7 @@ int main() { return 0; }
 <==
 [1/1] Compiling [32mbuild/.conf_check_92724e97d2a8131cdbabec48e168cdc4/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wl,--soname=foo', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_92724e97d2a8131cdbabec48e168cdc4/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wl,--soname=foo', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_92724e97d2a8131cdbabec48e168cdc4/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------
 Checking for compilation flag -std=c++11 support
@@ -737,16 +737,16 @@ int main() { return 0; }
 <==
 [1/1] Compiling [32mbuild/.conf_check_92724e97d2a8131cdbabec48e168cdc4/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_92724e97d2a8131cdbabec48e168cdc4/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_92724e97d2a8131cdbabec48e168cdc4/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------
 Checking boost includes
 headers not found, please provide a --boost-includes argument (see help)
-from /home/lucas/ns-allinone-3.30.1/ns-3.30.1: The configuration failed
+from /home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1: The configuration failed
 ------------------------------------------------------
 Checking boost includes
 headers not found, please provide a --boost-includes argument (see help)
-from /home/lucas/ns-allinone-3.30.1/ns-3.30.1: The configuration failed
+from /home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1: The configuration failed
 ------------------------------------------------------
 Checking for program 'python'
 /usr/bin/python3
@@ -768,7 +768,7 @@ err: Traceback (most recent call last):
   File "<string>", line 1, in <module>
 ModuleNotFoundError: No module named 'distutils.sysconfig'
 
-from /home/lucas/ns-allinone-3.30.1/ns-3.30.1/bindings/python: The distutils module is unusable: install "python-devel"?
+from /home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/bindings/python: The distutils module is unusable: install "python-devel"?
 ------------------------------------------------------
 Checking for click location
 not found
@@ -785,7 +785,7 @@ to the PKG_CONFIG_PATH environment variable
 No package 'gtk+-3.0' found
 
 not found
-from /home/lucas/ns-allinone-3.30.1/ns-3.30.1/src/config-store: The configuration failed
+from /home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/src/config-store: The configuration failed
 ------------------------------------------------------
 Checking for 'libxml-2.0'
 ['/usr/bin/pkg-config', '--cflags', '--libs', 'libxml-2.0']
@@ -795,7 +795,7 @@ to the PKG_CONFIG_PATH environment variable
 No package 'libxml-2.0' found
 
 not found
-from /home/lucas/ns-allinone-3.30.1/ns-3.30.1/src/config-store: The configuration failed
+from /home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/src/config-store: The configuration failed
 ------------------------------------------------------
 checking for uint128_t
 ==>
@@ -812,7 +812,7 @@ checking for uint128_t
 <==
 [1/2] Compiling [32mbuild/.conf_check_facce93b27c0b28e5964dbe835d44fd5/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_facce93b27c0b28e5964dbe835d44fd5/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_facce93b27c0b28e5964dbe835d44fd5/testbuild/test.cpp.1.o']
 err: ../test.cpp: In function ‘int main(int, char**)’:
 ../test.cpp:6:7: error: ‘uint128_t’ was not declared in this scope; did you mean ‘uint32_t’?
     6 |  if ((uint128_t *) 0) return 0;
@@ -830,16 +830,16 @@ err: ../test.cpp: In function ‘int main(int, char**)’:
       |              ^~~~~~~~~
       |              uint32_t
 
-from /home/lucas/ns-allinone-3.30.1/ns-3.30.1/src/core: Test does not build: Traceback (most recent call last):
-  File "/home/lucas/ns-allinone-3.30.1/ns-3.30.1/.waf3-2.0.18-ff4ae9f5cc05353d3dc3aeff8854ae69/waflib/Configure.py", line 333, in run_build
+from /home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/src/core: Test does not build: Traceback (most recent call last):
+  File "/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/.waf3-2.0.18-ff4ae9f5cc05353d3dc3aeff8854ae69/waflib/Configure.py", line 333, in run_build
     bld.compile()
-  File "/home/lucas/ns-allinone-3.30.1/ns-3.30.1/.waf3-2.0.18-ff4ae9f5cc05353d3dc3aeff8854ae69/waflib/Build.py", line 176, in compile
+  File "/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/.waf3-2.0.18-ff4ae9f5cc05353d3dc3aeff8854ae69/waflib/Build.py", line 176, in compile
     raise Errors.BuildError(self.producer.error)
 waflib.Errors.BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
 not found
-from /home/lucas/ns-allinone-3.30.1/ns-3.30.1/src/core: The configuration failed
+from /home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/src/core: The configuration failed
 ------------------------------------------------------
 checking for __uint128_t
 ==>
@@ -856,10 +856,10 @@ checking for __uint128_t
 <==
 [1/2] Compiling [32mbuild/.conf_check_b56575a1cf831cd90b0428197c1674e0/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_b56575a1cf831cd90b0428197c1674e0/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_b56575a1cf831cd90b0428197c1674e0/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_b56575a1cf831cd90b0428197c1674e0/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_b56575a1cf831cd90b0428197c1674e0/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_b56575a1cf831cd90b0428197c1674e0/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking high precision implementation
@@ -877,10 +877,10 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_87dc75f4d5a4d81d3de89ccc66d2f410/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_87dc75f4d5a4d81d3de89ccc66d2f410/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_87dc75f4d5a4d81d3de89ccc66d2f410/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_87dc75f4d5a4d81d3de89ccc66d2f410/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_87dc75f4d5a4d81d3de89ccc66d2f410/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_87dc75f4d5a4d81d3de89ccc66d2f410/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking for header inttypes.h
@@ -895,10 +895,10 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_71902e4db1e1fb33866f0d1c21c77ee8/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_71902e4db1e1fb33866f0d1c21c77ee8/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_71902e4db1e1fb33866f0d1c21c77ee8/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_71902e4db1e1fb33866f0d1c21c77ee8/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_71902e4db1e1fb33866f0d1c21c77ee8/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_71902e4db1e1fb33866f0d1c21c77ee8/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking for header sys/inttypes.h
@@ -913,22 +913,22 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_ab3a88ef84bcf481a1b44e59b9acea7f/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_ab3a88ef84bcf481a1b44e59b9acea7f/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_ab3a88ef84bcf481a1b44e59b9acea7f/testbuild/test.cpp.1.o']
 err: ../test.cpp:1:10: fatal error: sys/inttypes.h: No such file or directory
     1 | #include <sys/inttypes.h>
       |          ^~~~~~~~~~~~~~~~
 compilation terminated.
 
-from /home/lucas/ns-allinone-3.30.1/ns-3.30.1/src/core: Test does not build: Traceback (most recent call last):
-  File "/home/lucas/ns-allinone-3.30.1/ns-3.30.1/.waf3-2.0.18-ff4ae9f5cc05353d3dc3aeff8854ae69/waflib/Configure.py", line 333, in run_build
+from /home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/src/core: Test does not build: Traceback (most recent call last):
+  File "/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/.waf3-2.0.18-ff4ae9f5cc05353d3dc3aeff8854ae69/waflib/Configure.py", line 333, in run_build
     bld.compile()
-  File "/home/lucas/ns-allinone-3.30.1/ns-3.30.1/.waf3-2.0.18-ff4ae9f5cc05353d3dc3aeff8854ae69/waflib/Build.py", line 176, in compile
+  File "/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/.waf3-2.0.18-ff4ae9f5cc05353d3dc3aeff8854ae69/waflib/Build.py", line 176, in compile
     raise Errors.BuildError(self.producer.error)
 waflib.Errors.BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
 not found
-from /home/lucas/ns-allinone-3.30.1/ns-3.30.1/src/core: The configuration failed
+from /home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/src/core: The configuration failed
 ------------------------------------------------------
 Checking for header sys/types.h
 ==>
@@ -942,10 +942,10 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_a1f5eb99781ed72d6f7c486a9233dce5/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_a1f5eb99781ed72d6f7c486a9233dce5/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_a1f5eb99781ed72d6f7c486a9233dce5/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_a1f5eb99781ed72d6f7c486a9233dce5/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_a1f5eb99781ed72d6f7c486a9233dce5/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_a1f5eb99781ed72d6f7c486a9233dce5/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking for header sys/stat.h
@@ -960,10 +960,10 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_df624e4ac3a4507c87a576ef6f3a3e18/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_df624e4ac3a4507c87a576ef6f3a3e18/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_df624e4ac3a4507c87a576ef6f3a3e18/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_df624e4ac3a4507c87a576ef6f3a3e18/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_df624e4ac3a4507c87a576ef6f3a3e18/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_df624e4ac3a4507c87a576ef6f3a3e18/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking for header dirent.h
@@ -978,10 +978,10 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_b1c5fd3b060471dcecfecbeb771fc0d1/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_b1c5fd3b060471dcecfecbeb771fc0d1/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_b1c5fd3b060471dcecfecbeb771fc0d1/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_b1c5fd3b060471dcecfecbeb771fc0d1/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_b1c5fd3b060471dcecfecbeb771fc0d1/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_b1c5fd3b060471dcecfecbeb771fc0d1/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking for header stdlib.h
@@ -996,10 +996,10 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_d5daedb867ba66fc80d74a2aecccd048/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_d5daedb867ba66fc80d74a2aecccd048/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_d5daedb867ba66fc80d74a2aecccd048/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_d5daedb867ba66fc80d74a2aecccd048/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_d5daedb867ba66fc80d74a2aecccd048/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_d5daedb867ba66fc80d74a2aecccd048/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking for header signal.h
@@ -1014,10 +1014,10 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_6f58fe0695dffc1ac60ac25f8cc70c24/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_6f58fe0695dffc1ac60ac25f8cc70c24/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_6f58fe0695dffc1ac60ac25f8cc70c24/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_6f58fe0695dffc1ac60ac25f8cc70c24/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_6f58fe0695dffc1ac60ac25f8cc70c24/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_6f58fe0695dffc1ac60ac25f8cc70c24/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking for header pthread.h
@@ -1034,10 +1034,10 @@ int main ()
 <==
 [1/2] Compiling [32mbuild/.conf_check_f7c0fffd93df9fe1a80ff12c0ddf12dd/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_f7c0fffd93df9fe1a80ff12c0ddf12dd/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_f7c0fffd93df9fe1a80ff12c0ddf12dd/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_f7c0fffd93df9fe1a80ff12c0ddf12dd/testbuild/testprog[0m
 
-['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_f7c0fffd93df9fe1a80ff12c0ddf12dd/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_f7c0fffd93df9fe1a80ff12c0ddf12dd/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking for header stdint.h
@@ -1052,10 +1052,10 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_87dc75f4d5a4d81d3de89ccc66d2f410/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_87dc75f4d5a4d81d3de89ccc66d2f410/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_87dc75f4d5a4d81d3de89ccc66d2f410/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_87dc75f4d5a4d81d3de89ccc66d2f410/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_87dc75f4d5a4d81d3de89ccc66d2f410/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_87dc75f4d5a4d81d3de89ccc66d2f410/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking for header inttypes.h
@@ -1070,10 +1070,10 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_71902e4db1e1fb33866f0d1c21c77ee8/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_71902e4db1e1fb33866f0d1c21c77ee8/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_71902e4db1e1fb33866f0d1c21c77ee8/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_71902e4db1e1fb33866f0d1c21c77ee8/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_71902e4db1e1fb33866f0d1c21c77ee8/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_71902e4db1e1fb33866f0d1c21c77ee8/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking for header sys/inttypes.h
@@ -1088,22 +1088,22 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_ab3a88ef84bcf481a1b44e59b9acea7f/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_ab3a88ef84bcf481a1b44e59b9acea7f/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_ab3a88ef84bcf481a1b44e59b9acea7f/testbuild/test.cpp.1.o']
 err: ../test.cpp:1:10: fatal error: sys/inttypes.h: No such file or directory
     1 | #include <sys/inttypes.h>
       |          ^~~~~~~~~~~~~~~~
 compilation terminated.
 
-from /home/lucas/ns-allinone-3.30.1/ns-3.30.1/src/core: Test does not build: Traceback (most recent call last):
-  File "/home/lucas/ns-allinone-3.30.1/ns-3.30.1/.waf3-2.0.18-ff4ae9f5cc05353d3dc3aeff8854ae69/waflib/Configure.py", line 333, in run_build
+from /home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/src/core: Test does not build: Traceback (most recent call last):
+  File "/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/.waf3-2.0.18-ff4ae9f5cc05353d3dc3aeff8854ae69/waflib/Configure.py", line 333, in run_build
     bld.compile()
-  File "/home/lucas/ns-allinone-3.30.1/ns-3.30.1/.waf3-2.0.18-ff4ae9f5cc05353d3dc3aeff8854ae69/waflib/Build.py", line 176, in compile
+  File "/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/.waf3-2.0.18-ff4ae9f5cc05353d3dc3aeff8854ae69/waflib/Build.py", line 176, in compile
     raise Errors.BuildError(self.producer.error)
 waflib.Errors.BuildError: Build failed
  -> task in 'testprog' failed with exit status 1 (run with -v to display more information)
 
 not found
-from /home/lucas/ns-allinone-3.30.1/ns-3.30.1/src/core: The configuration failed
+from /home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/src/core: The configuration failed
 ------------------------------------------------------
 Checking for library rt
 ==>
@@ -1116,10 +1116,10 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_ab72690583f2973c46ae66ff926bf40d/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_ab72690583f2973c46ae66ff926bf40d/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_ab72690583f2973c46ae66ff926bf40d/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_ab72690583f2973c46ae66ff926bf40d/testbuild/testprog[0m
 
-['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_ab72690583f2973c46ae66ff926bf40d/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lrt']
+['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_ab72690583f2973c46ae66ff926bf40d/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lrt']
 yes
 ------------------------------------------------------
 Checking for header sys/ioctl.h
@@ -1134,10 +1134,10 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_a500e4e04895f8dce012d09437dc914c/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_a500e4e04895f8dce012d09437dc914c/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_a500e4e04895f8dce012d09437dc914c/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_a500e4e04895f8dce012d09437dc914c/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_a500e4e04895f8dce012d09437dc914c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_a500e4e04895f8dce012d09437dc914c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking for header net/if.h
@@ -1152,10 +1152,10 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_9f4e1a1ff328a1e8411b45269d846fdb/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_9f4e1a1ff328a1e8411b45269d846fdb/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_9f4e1a1ff328a1e8411b45269d846fdb/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_9f4e1a1ff328a1e8411b45269d846fdb/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_9f4e1a1ff328a1e8411b45269d846fdb/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_9f4e1a1ff328a1e8411b45269d846fdb/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking for header net/ethernet.h
@@ -1170,10 +1170,10 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_6e41348326de2b334c4f59de3729bd6a/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_6e41348326de2b334c4f59de3729bd6a/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_6e41348326de2b334c4f59de3729bd6a/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_6e41348326de2b334c4f59de3729bd6a/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_6e41348326de2b334c4f59de3729bd6a/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_6e41348326de2b334c4f59de3729bd6a/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking for header linux/if_tun.h
@@ -1188,10 +1188,10 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_8e878b6598e0eb4487674343c0115934/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_8e878b6598e0eb4487674343c0115934/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_8e878b6598e0eb4487674343c0115934/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_8e878b6598e0eb4487674343c0115934/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_8e878b6598e0eb4487674343c0115934/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_8e878b6598e0eb4487674343c0115934/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking for header netpacket/packet.h
@@ -1206,10 +1206,10 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_fff5469bff6310ddc2b775af42c41fc5/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_fff5469bff6310ddc2b775af42c41fc5/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_fff5469bff6310ddc2b775af42c41fc5/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_fff5469bff6310ddc2b775af42c41fc5/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_fff5469bff6310ddc2b775af42c41fc5/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_fff5469bff6310ddc2b775af42c41fc5/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking for NSC location
@@ -1223,7 +1223,7 @@ to the PKG_CONFIG_PATH environment variable
 No package 'sqlite3' found
 
 not found
-from /home/lucas/ns-allinone-3.30.1/ns-3.30.1/src/stats: The configuration failed
+from /home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/src/stats: The configuration failed
 ------------------------------------------------------
 Checking for header linux/if_tun.h
 ==>
@@ -1237,10 +1237,10 @@ int main(int argc, char **argv) {
 <==
 [1/2] Compiling [32mbuild/.conf_check_8e878b6598e0eb4487674343c0115934/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_8e878b6598e0eb4487674343c0115934/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_8e878b6598e0eb4487674343c0115934/testbuild/test.cpp.1.o']
 [2/2] Linking [33mbuild/.conf_check_8e878b6598e0eb4487674343c0115934/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_8e878b6598e0eb4487674343c0115934/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_8e878b6598e0eb4487674343c0115934/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------
 Checking for program 'sudo'
@@ -1250,7 +1250,7 @@ find program=['sudo'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '
 Checking for program 'valgrind'
 not found
 find program=['valgrind'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='VALGRIND' -> None
-from /home/lucas/ns-allinone-3.30.1/ns-3.30.1: Could not find the program ['valgrind']
+from /home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1: Could not find the program ['valgrind']
 ------------------------------------------------------
 Checking for 'gsl'
 ['/usr/bin/pkg-config', '--cflags', '--libs', 'gsl']
@@ -1260,12 +1260,12 @@ to the PKG_CONFIG_PATH environment variable
 No package 'gsl' found
 
 not found
-from /home/lucas/ns-allinone-3.30.1/ns-3.30.1: The configuration failed
+from /home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1: The configuration failed
 ------------------------------------------------------
 libgcrypt-config
 not found
 find program=['libgcrypt-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='LIBGCRYPT_CONFIG' -> None
-from /home/lucas/ns-allinone-3.30.1/ns-3.30.1: Could not find the program ['libgcrypt-config']
+from /home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1: Could not find the program ['libgcrypt-config']
 -------------------------------------------------------
 Checking for compilation flag -fstrict-aliasing support
 ==>
@@ -1273,7 +1273,7 @@ int main() { return 0; }
 <==
 [1/1] Compiling [32mbuild/.conf_check_92724e97d2a8131cdbabec48e168cdc4/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_92724e97d2a8131cdbabec48e168cdc4/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_92724e97d2a8131cdbabec48e168cdc4/testbuild/test.cpp.1.o']
 ok
 -------------------------------------------------------
 Checking for compilation flag -fstrict-aliasing support
@@ -1282,7 +1282,7 @@ int main() { return 0; }
 <==
 [1/1] Compiling [32mbuild/.conf_check_9c1e184cb7a8ee8b2d99ea7e4214752d/test.c[0m
 
-['/usr/bin/gcc', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_9c1e184cb7a8ee8b2d99ea7e4214752d/testbuild/test.c.1.o']
+['/usr/bin/gcc', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_9c1e184cb7a8ee8b2d99ea7e4214752d/testbuild/test.c.1.o']
 ok
 -------------------------------------------------------
 Checking for compilation flag -Wstrict-aliasing support
@@ -1291,7 +1291,7 @@ int main() { return 0; }
 <==
 [1/1] Compiling [32mbuild/.conf_check_92724e97d2a8131cdbabec48e168cdc4/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fstrict-aliasing', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_92724e97d2a8131cdbabec48e168cdc4/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fstrict-aliasing', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_92724e97d2a8131cdbabec48e168cdc4/testbuild/test.cpp.1.o']
 ok
 -------------------------------------------------------
 Checking for compilation flag -Wstrict-aliasing support
@@ -1300,10 +1300,10 @@ int main() { return 0; }
 <==
 [1/1] Compiling [32mbuild/.conf_check_9c1e184cb7a8ee8b2d99ea7e4214752d/test.c[0m
 
-['/usr/bin/gcc', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o/home/lucas/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_9c1e184cb7a8ee8b2d99ea7e4214752d/testbuild/test.c.1.o']
+['/usr/bin/gcc', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o/home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1/build/.conf_check_9c1e184cb7a8ee8b2d99ea7e4214752d/testbuild/test.c.1.o']
 ok
 -------------------------------------------------------
 Checking for program 'doxygen'
 not found
 find program=['doxygen'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin'] var='DOXYGEN' -> None
-from /home/lucas/ns-allinone-3.30.1/ns-3.30.1: Could not find the program ['doxygen']
+from /home/lucas/Wireless-Sensor-Networks-EE407/ns-allinone-3.30.1/ns-3.30.1: Could not find the program ['doxygen']

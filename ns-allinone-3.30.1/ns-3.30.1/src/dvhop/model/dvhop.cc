@@ -255,6 +255,11 @@ namespace ns3 {
 
             }
 
+        void
+            RoutingProtocol::DeleteSomeNodes(Time time, uint32_t interface, uint32_t totalNodes)
+            {   
+                    Simulator::Schedule(time, &RoutingProtocol::NotifyInterfaceDown, this, interface);
+            }  
 
         void
             RoutingProtocol::NotifyInterfaceDown (uint32_t interface)
@@ -357,6 +362,25 @@ namespace ns3 {
             {
                 *stream->GetStream ()<<"----------------- Node "<<node->GetId ()<<"-----------------"<<"\n";
                 m_disTable.Print (stream);
+            }
+
+        
+
+        void
+            RoutingProtocol::PrintCoordinates (Ptr<OutputStreamWrapper> stream, Ptr<Node> node) const
+            {
+                if(node->GetId() != 1 && node->GetId() != 7 && node->GetId() != 14)
+                {
+                    //*stream->GetStream() << "Node " << node->GetId()<<"\n";
+                    std::cout << "Node " << node->GetId()<<"\n";
+                    m_disTable.EstimatePositions();
+                }
+                else
+                {
+                    std::cout << "Node " << node->GetId()<<"\n";
+                    std::cout << "(is beacon)\n";
+
+                }
             }
 
         int64_t

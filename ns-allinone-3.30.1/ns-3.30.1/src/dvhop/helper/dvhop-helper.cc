@@ -66,11 +66,12 @@ namespace ns3 {
   {
     for(uint32_t i=0; i < NodeList::GetNNodes (); i++)
       {
-        Ptr<Node> node = NodeList::GetNode (i);
-        Simulator::Schedule(printTime, &DVHopHelper::Print, this, node, stream);
+          Ptr<Node> node = NodeList::GetNode (i);
+          Simulator::Schedule(printTime, &DVHopHelper::Print, this, node, stream);
       }
 
   }
+
 
   void
   DVHopHelper::Print (Ptr<Node> node, Ptr<OutputStreamWrapper> stream) const
@@ -80,7 +81,8 @@ namespace ns3 {
     //Ptr<Ipv4RoutingProtocol> rp = ipv4->GetRoutingProtocol ();
     NS_ASSERT (rp);
     rp->PrintDistances(stream, node);
-  }
+    rp->PrintCoordinates(stream, node);
+}
 
 }
 
