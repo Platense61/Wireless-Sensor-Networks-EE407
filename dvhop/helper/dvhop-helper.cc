@@ -72,6 +72,7 @@ namespace ns3 {
 
   }
 
+
   void
   DVHopHelper::Print (Ptr<Node> node, Ptr<OutputStreamWrapper> stream) const
   {
@@ -80,7 +81,8 @@ namespace ns3 {
     //Ptr<Ipv4RoutingProtocol> rp = ipv4->GetRoutingProtocol ();
     NS_ASSERT (rp);
     rp->PrintDistances(stream, node);
-  }
+    rp->PrintCoordinates(stream, node);
+}
 
 }
 

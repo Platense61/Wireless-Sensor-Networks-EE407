@@ -359,6 +359,33 @@ namespace ns3 {
                 m_disTable.Print (stream);
             }
 
+        
+
+        void
+            RoutingProtocol::PrintCoordinates (Ptr<OutputStreamWrapper> stream, Ptr<Node> node) const
+            {
+                if(node->GetId() != 0 && node->GetId() != 4 && node->GetId() != 9)
+                {
+                    //*stream->GetStream() << "Node " << node->GetId()<<"\n";
+                    std::cout << "Node " << node->GetId()<<"\n";
+                    m_disTable.EstimatePositions();
+                }
+                else
+                {
+                    std::cout << "Node " << node->GetId()<<"\n";
+                    std::cout << "(is beacon)\n";
+
+                }
+            }
+
+
+
+
+
+
+
+
+
         int64_t
             RoutingProtocol::AssignStreams (int64_t stream)
             {

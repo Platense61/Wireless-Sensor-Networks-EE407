@@ -79,7 +79,7 @@ int main (int argc, char **argv)
 //-----------------------------------------------------------------------------
 DVHopExample::DVHopExample () :
   size (4),
-  step (5),
+  step (30),
   totalTime (10),
   //numNodes (20),
   pcap (true),
@@ -92,7 +92,7 @@ bool
 DVHopExample::Configure (int argc, char **argv)
 {
   // Enable DVHop logs by default. Comment this if too noisy
-  LogComponentEnable("DVHopRoutingProtocol", LOG_LEVEL_ALL);
+  //LogComponentEnable("DVHopRoutingProtocol", LOG_LEVEL_ALL);
 
   SeedManager::SetSeed (12345);
   CommandLine cmd;
@@ -164,19 +164,21 @@ DVHopExample::CreateBeacons ()
   Ptr<Ipv4RoutingProtocol> proto = nodes.Get (0)->GetObject<Ipv4>()->GetRoutingProtocol ();
   Ptr<dvhop::RoutingProtocol> dvhop = DynamicCast<dvhop::RoutingProtocol> (proto);
   dvhop->SetIsBeacon (true);
-  dvhop->SetPosition (123.42, 4534.452);
-
+  //dvhop->SetPosition (123.42, 4534.452);
+  dvhop->SetPosition(0,0);
 
   proto = nodes.Get (4)->GetObject<Ipv4>()->GetRoutingProtocol ();
   dvhop = DynamicCast<dvhop::RoutingProtocol> (proto);
   dvhop->SetIsBeacon (true);
-  dvhop->SetPosition (6663.42, 566.646);
+  //dvhop->SetPosition (6663.42, 566.646);
+  dvhop->SetPosition(0,-1 * step);
 
 
   proto = nodes.Get (9)->GetObject<Ipv4>()->GetRoutingProtocol ();
   dvhop = DynamicCast<dvhop::RoutingProtocol> (proto);
   dvhop->SetIsBeacon (true);
-  dvhop->SetPosition (123.42, 9873.45);
+  //dvhop->SetPosition (123.42, 9873.45);
+  dvhop->SetPosition(step,-2 * step);
 
 }
 

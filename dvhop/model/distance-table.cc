@@ -93,6 +93,42 @@ namespace ns3
         }
     }
 
+    void
+    DistanceTable::EstimatePositions() const
+    {
+        double xs[3];
+        double ys[3];
+        double rs[3];
+
+        int i = 0;
+        for(std::map<Ipv4Address,BeaconInfo>::const_iterator j = m_table.begin(); j != m_table.end(); j++)
+        {
+            rs[i] = j->second.GetHops() * 36.21;
+            xs[i] = j->second.GetPosition().first;
+            ys[i] = j->second.GetPosition().second;
+            i++;
+        }
+
+        double a = xs[0] - xs[1];
+        double b = ys[0] - ys[1];
+        double d = xs[0] - xs[2];
+        double e = ys[0] - ys[3];
+
+        double t = (rs[0]*rs[0] - xs[0]*xs[0] - ys[0]*ys[0]);
+        double c = (rs[1]*rs[1] - xs[1]*xs[1] - ys[1]*ys[1]) - t;
+        double f = (rs[2]*rs[2] - xs[2]*xs[2] - ys[2]*ys[2]) - t;
+
+        double mX = (c*e - b*f) / 2;
+        double mY = (a*f - d*c) / 2;
+        double m = a*e - d*b;
+
+        double x = mX/m;
+        double y = mY/m;
+        
+        std::cout << "x: " << x << " y: " << y << "\n";
+
+
+    }
 
     std::ostream &
     operator<< (std::ostream &os, BeaconInfo const &h)

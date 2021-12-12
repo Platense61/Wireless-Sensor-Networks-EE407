@@ -93,6 +93,8 @@ namespace ns3
                  * @param xPos X coordinate
                  * @param yPos Y coordinate
                  */
+                void EstimatePositions() const;
+
                 void AddBeacon(Ipv4Address, uint16_t, double, double);
 
                 void AddBeacon(Ipv4Address, uint16_t, double&&, double&&);
